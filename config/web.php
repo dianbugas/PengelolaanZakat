@@ -5,7 +5,7 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
-    'name' => 'Buku Kita',
+    'name' => 'pengelolaan Zakat',
     'timeZone' => 'Asia/Jakarta',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
@@ -22,9 +22,10 @@ $config = [
             'currencyCode' => 'Rp.'
         ],
 
-        //----------tambahan RBAC------------ 
+        //----------tambahan RBAC------------
         'authManager' => [
             'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\PhpManager'
+            'defaultRoles' => ['isGuest']
         ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
@@ -58,14 +59,14 @@ $config = [
             ],
         ],
         'db' => $db,
-       
+
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        
+
     ],
     'params' => $params,
     //----------YII 2 USER DEKTRIUM(VENDOR)
@@ -75,7 +76,7 @@ $config = [
         'class' => 'dektrium\user\Module',
         //tambahan
         'enableUnconfirmedLogin'=>false, //mengizinkan login tanpa user
-        'admins'=>['admin','yusup','sopian'],
+        'admins'=>['admin'],
     ],
     //-----------Modul RBAC-------------
     'admin' => [
