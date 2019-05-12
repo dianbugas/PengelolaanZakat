@@ -1,0 +1,24 @@
+{
+    "name": "cinghie/yii2-ionicons",
+    "description": "Asset Bundle to include Ionicons on your Yii 2 project",
+    "keywords": ["yii2", "yii2 ionicons", "ionicons", "yii2 icon", "ionicons yii2"],
+    "homepage": "https://github.com/cinghie/yii2-fontawesome",
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Gogodigital.it",
+            "email": "info@gogodigital.it",
+            "homepage": "http://www.gogodigital.it/"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "^2.0.14",
+        "bower-asset/ionicons": "^4.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "cinghie\\ionicons\\": ""
+        }
+    }
+}

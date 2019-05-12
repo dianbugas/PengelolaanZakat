@@ -1,0 +1,41 @@
+{
+    "name": "cinghie/yii2-traits",
+    "description": "Yii2 Traits",
+    "keywords": [
+        "yii2 traits", 
+        "yii2 traits library", 
+        "yii2 traits module", 
+        "yii2 traits modules"
+    ],
+    "type": "yii2-extension",
+    "homepage": "http://github.com/cinghie/yii2-traits",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Gogodigital.it",
+            "email": "info@gogodigital.it",
+            "homepage": "http://www.gogodigital.it/"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.12",
+        "yiisoft/yii2-imagine": "*",
+        "2amigos/yii2-ckeditor-widget": "*",
+        "2amigos/yii2-tinymce-widget": "*",
+        "asofter/yii2-imperavi-redactor": "*",
+        "cocur/slugify": "*",
+        "creocoder/yii2-taggable": "*",
+        "dektrium/yii2-rbac": "*",
+        "dektrium/yii2-user": "*",
+        "kartik-v/yii2-detail-view": "*",
+        "kartik-v/yii2-grid": "*",
+        "kartik-v/yii2-helpers": "*",
+        "kartik-v/yii2-markdown": "*",
+        "kartik-v/yii2-widgets": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "cinghie\\traits\\": ""
+        }
+    }
+}
